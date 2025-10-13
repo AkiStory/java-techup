@@ -1,3 +1,5 @@
+package java.basic;
+
 public class SOutMain {
 
 	static void main(String[] args) {

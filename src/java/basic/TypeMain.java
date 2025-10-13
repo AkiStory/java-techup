@@ -1,3 +1,5 @@
+package java.basic;
+
 public class TypeMain {
 	static void main(String[] args) {
 		// 자료형

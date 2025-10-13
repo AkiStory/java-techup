@@ -1,3 +1,5 @@
+package java.basic;
+
 /*
 
 java -> jvm(자바가상머신) 위에서 동작,

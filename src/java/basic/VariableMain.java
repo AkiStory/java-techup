@@ -1,3 +1,5 @@
+package java.basic;
+
 public class VariableMain {
 	static void main(String[] args) {
 		// 자료형 변수의 이름 = 값

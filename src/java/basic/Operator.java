@@ -1,3 +1,5 @@
+package java.basic;
+
 public class Operator {
 	static void main(String[] args) {
 		// 연산자 : 산술, 대입, 비교, 논리
