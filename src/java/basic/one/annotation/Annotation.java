@@ -1,4 +1,4 @@
-package java.basic.annotation;
+package java.basic.one.annotation;
 
 public class Annotation {
 	static void main(String[] args) {

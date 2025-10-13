@@ -1,4 +1,4 @@
-package java.basic;
+package java.basic.one;
 
 public class TypeMain {
 	static void main(String[] args) {
