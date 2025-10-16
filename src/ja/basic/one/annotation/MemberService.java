@@ -1,4 +1,4 @@
-package java.basic.one.annotation;
+package ja.basic.one.annotation;
 
 public class MemberService {
 	/**

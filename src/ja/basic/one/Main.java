@@ -1,4 +1,4 @@
-package java.basic.one;
+package ja.basic.one;
 
 /*
 
