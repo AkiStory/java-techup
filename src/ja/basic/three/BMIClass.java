@@ -38,12 +38,12 @@ public class BMIClass {
 			System.out.println("이름 : ");
 			var name = scanner.nextLine();
 			if (!name.matches("^[A-Za-z\\uAC00-\\uD7A3]+$") || name.length() < 2 || name.length() > 10) {
-				System.out.println("오류 발생, 한글 또는 영어, 2~10자로");
+				System.out.println("다시 입력하세요, 한글 또는 영어, 2자 ~ 10자");
 				return inputName();
 			}
 			return name;
 		} catch (Exception e) {
-			System.out.println("오류 발생, 10~250으로");
+			System.out.println("다시 입력하세요, 한글 또는 영어, 2자 ~ 10자");
 			return inputName();
 		}
 	}
@@ -54,12 +54,12 @@ public class BMIClass {
 			System.out.println("성별 : ");
 			var sex = scanner.nextLine();
 			if (!"남자".equals(sex) && !"여자".equals(sex)) {
-				System.out.println("오류 발생, 2~10자로");
+				System.out.println("다시 입력하세요, 남자 또는 여자");
 				return inputSex();
 			}
 			return sex;
 		} catch (Exception e) {
-			System.out.println("오류 발생, 10~250으로");
+			System.out.println("다시 입력하세요, 남자 또는 여자");
 			return inputSex();
 		}
 	}
@@ -70,12 +70,12 @@ public class BMIClass {
 			System.out.println("키(cm) : ");
 			var height = scanner.nextDouble();
 			if (height < 10 || height > 250) {
-				System.out.println("오류 발생, 10~250으로");
+				System.out.println("다시 입력하세요, 10 ~ 250");
 				return inputHeight();
 			}
 			return height;
 		} catch (Exception e) {
-			System.out.println("오류 발생, 10~250으로");
+			System.out.println("다시 입력하세요, 10 ~ 250");
 			return inputHeight();
 		}
 	}
@@ -86,12 +86,12 @@ public class BMIClass {
 			System.out.println("몸무게(kg) : ");
 			var weight = scanner.nextDouble();
 			if (weight < 2 || weight > 300) {
-				System.out.println("오류 발생, 2~300으로");
+				System.out.println("다시 입력하세요, 2 ~ 300");
 				return inputWeight();
 			}
 			return weight;
 		} catch (Exception e) {
-			System.out.println("오류가 발생, 2~300으로");
+			System.out.println("다시 입력하세요, 2 ~ 300");
 			return inputWeight();
 		}
 	}
