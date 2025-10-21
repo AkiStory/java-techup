@@ -8,5 +8,6 @@ public class Main {
 	static void main(String[] args) {
 		System.out.println("가위바위보를 질 때까지 합니다.");
 		Winner.whoWin();
+		System.out.println("\n가위바위보를 종료합니다.");
 	}
 }
