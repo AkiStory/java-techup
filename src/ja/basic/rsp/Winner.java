@@ -5,13 +5,13 @@ package ja.basic.rsp;
 // 나 : 가위, 컴퓨터 : 보 , 플레이어가 이겼습니다.
 
 public class Winner {
-	public static void whoWin() {
-		var RSP = Player.inputRSP();
-		var player = RSPMean.rspM(RSP);
+	public static void GamePlay() {
+		var rsp = Player.inputRSP();
+		var player = RSPReplace.replaceToRSP(rsp);
 
-		System.out.println("당신은 " + player + "를 냈습니다");
+		System.out.println("당신은 " + player + "를 냈습니다.");
 
-		String comChoice = Computers.computerChoice();
+		String comChoice = Computer.computerChoice();
 
 		RSPResult.result(player, comChoice);
 	}

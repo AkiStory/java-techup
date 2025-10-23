@@ -4,17 +4,17 @@ public class RSPResult {
 
 	public static void result(String player, String comChoice) {
 		if (player.equals(comChoice)) {
-			System.out.println("비겼습니다.");
+			System.out.println("\n비겼습니다.");
 			Streak.keepStreak();
-			Winner.whoWin();
+			Winner.GamePlay();
 
 		} else if (isPlayerWin(player, comChoice)) {
-			System.out.println("당신이 이겼습니다");
+			System.out.println("\n당신이 이겼습니다.");
 			Streak.addWin();
-			Winner.whoWin();
+			Winner.GamePlay();
 
 		} else {
-			System.out.println("당신이 졌습니다");
+			System.out.println("\n당신이 졌습니다.");
 			Streak.endStreak();
 		}
 	}
