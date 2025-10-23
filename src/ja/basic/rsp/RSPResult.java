@@ -6,12 +6,12 @@ public class RSPResult {
 		if (player.equals(comChoice)) {
 			System.out.println("\n비겼습니다.");
 			Streak.keepStreak();
-			Winner.GamePlay();
+			GameStart.GamePlay();
 
 		} else if (isPlayerWin(player, comChoice)) {
 			System.out.println("\n당신이 이겼습니다.");
 			Streak.addWin();
-			Winner.GamePlay();
+			GameStart.GamePlay();
 
 		} else {
 			System.out.println("\n당신이 졌습니다.");

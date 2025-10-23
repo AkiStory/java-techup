@@ -4,7 +4,7 @@ package ja.basic.rsp;
 // 누가 이겼는지 판정
 // 나 : 가위, 컴퓨터 : 보 , 플레이어가 이겼습니다.
 
-public class Winner {
+public class GameStart {
 	public static void GamePlay() {
 		var rsp = Player.inputRSP();
 		var player = RSPReplace.replaceToRSP(rsp);
