@@ -56,3 +56,10 @@ public class AdminMode implements Mode {
 		}
 	}
 }
+
+// while(try - catch) can exchange this code.
+// if (sc.hasNextInt()) {
+// 	cmd = sc.nextInt();
+// } else {
+// 	sc.next();
+// }
