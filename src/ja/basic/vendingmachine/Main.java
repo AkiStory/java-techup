@@ -12,10 +12,10 @@ public class Main {
 	public static void main(String[] args) {
 		VendingMachine vm = new VendingMachine();
 		Scanner sc = new Scanner(System.in);
-		boolean powerOn = true;
 		Mode mode = null;
 
 		System.out.println("자판기 가동");
+		boolean powerOn = true;
 		while (powerOn) {
 			System.out.print("\n투입금액 입력 (0 입력시 종료) : ");
 			int input = 0;
