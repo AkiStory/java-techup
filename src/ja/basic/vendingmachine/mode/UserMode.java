@@ -14,7 +14,7 @@ public class UserMode implements Mode {
 		String[] drinks = vm.getDrinks();
 		int[] prices = vm.getPrices();
 
-		System.out.println("잔액 :" + money + "원");
+		System.out.println("잔액: " + money + "원");
 		for (int i = 0; i < drinks.length; i++) {
 			System.out.printf("%d. %s: %d원\n", i + 1, drinks[i], prices[i]);
 		}
@@ -25,7 +25,7 @@ public class UserMode implements Mode {
 		if (0 < pick && pick < 4) {
 			drinkNumber = pick - 1;
 		} else if (pick == 0) {
-			System.out.println("\n잔돈 반환 :" + money + "원");
+			System.out.println("\n잔돈 반환: " + money + "원");
 			return true;
 		} else {
 			System.out.println("없는 번호 입니다. 다시 고르세요.");
