@@ -31,9 +31,13 @@ public class UserMode implements Mode {
 		int change = vm.purchase(drinkNumber, money);
 		if (change < 0) {
 			System.out.println("돈이 부족합니다. 투입금 반환: " + money + "원");
+			return true;
+		} else if (change < 1000) {
+			System.out.println(drinks[drinkNumber] + "가 나왔습니다. \n돈이 부족합니다. 잔돈 반환:" + change + "원");
+			return true;
 		} else {
 			System.out.println(drinks[drinkNumber] + "가 나왔습니다. 잔돈: " + change + "원");
+			return run(vm, sc, change);
 		}
-		return true;
 	}
 }
