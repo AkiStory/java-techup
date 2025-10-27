@@ -15,10 +15,10 @@ public class VendingMachine {
 
 	private final List<Ledger> ledgerList = new ArrayList<>();
 
-	public int purchase(int drinkPick, int money) {
+	public int isPurchasable(int drinkPick, int money) {
 		int price = prices[drinkPick];
 		if (money < price) {
-			return 0;
+			return money;
 		}
 		totalSales += price;
 		return money - price;
@@ -26,7 +26,7 @@ public class VendingMachine {
 
 	public int TotalSales() {
 		return totalSales;
-	}
+	} // TODO.. getter 이용이 바람직
 
 	public void collectSales() {
 		ledgerList.add(new Ledger(LocalDateTime.now(), totalSales));
@@ -34,7 +34,7 @@ public class VendingMachine {
 	}
 
 	public List<Ledger> getLedgerList() {
-		return new ArrayList<>(ledgerList);
+		return new ArrayList<>(ledgerList); // TODO.. ModifiableList 사용시 변경x
 	}
 
 	public String[] getDrinks() {

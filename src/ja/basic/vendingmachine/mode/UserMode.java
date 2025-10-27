@@ -23,7 +23,7 @@ public class UserMode implements Mode {
 		int drinkNumber;
 		int pick = sc.nextInt();
 		if (0 < pick && pick < 4) {
-			drinkNumber = pick - 1;
+			drinkNumber = pick - 1; // TODO.. 재할당 안 하는 법 고민
 		} else if (pick == 0) {
 			System.out.println("\n잔돈 반환: " + money + "원");
 			return true;
@@ -32,9 +32,9 @@ public class UserMode implements Mode {
 			return run(vm, sc, money);
 		}
 
-		int change = vm.purchase(drinkNumber, money);
+		int change = vm.isPurchasable(drinkNumber, money);
 		if (change < 0) {
-			System.out.println("돈이 부족합니다. 투입금 반환: " + money + "원");
+			System.out.println("돈이 부족합니다. 투입금 반환: " + change + "원");
 			return true;
 		} else if (change < 1000) {
 			System.out.println(drinks[drinkNumber] + "가 나왔습니다. \n돈이 부족합니다. 잔돈 반환:" + change + "원");
