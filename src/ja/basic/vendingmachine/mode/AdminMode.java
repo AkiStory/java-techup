@@ -15,7 +15,7 @@ public class AdminMode implements Mode {
 			System.out.println("\n[관리자 메뉴]");
 			System.out.println("1 : 현재 매출  2 : 매출 회수  3 : 장부 확인  4 : 관리자 종료  5 : 자판기 종료");
 
-			int adminPick = 0;
+			int adminPick;
 			while (true) {
 				try {
 					adminPick = sc.nextInt();

@@ -18,7 +18,7 @@ public class VendingMachine {
 	public int purchase(int drinkPick, int money) {
 		int price = prices[drinkPick];
 		if (money < price) {
-			return -1;
+			return 0;
 		}
 		totalSales += price;
 		return money - price;
