@@ -17,7 +17,7 @@ public class Main {
 
 		System.out.println("자판기 가동");
 		while (powerOn) {
-			System.out.print("\n투입금액 입력 : ");
+			System.out.print("\n투입금액 입력 (0 입력시 종료) : ");
 			int input = 0;
 			if (sc.hasNextInt()) {
 				input = sc.nextInt();
@@ -31,6 +31,9 @@ public class Main {
 				mode = new AdminMode();
 			} else if (input > 0) {
 				mode = new UserMode();
+			} else if (input == 0) {
+				System.out.println("자판기를 종료합니다.");
+				break;
 			} else {
 				System.out.println("잘못된 입력입니다.");
 				continue;
