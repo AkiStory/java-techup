@@ -14,15 +14,19 @@ public class UserMode implements Mode {
 		String[] drinks = vm.getDrinks();
 		int[] prices = vm.getPrices();
 
+		System.out.println("잔액 :" + money + "원");
 		for (int i = 0; i < drinks.length; i++) {
 			System.out.printf("%d. %s: %d원\n", i + 1, drinks[i], prices[i]);
 		}
-		System.out.print("구매할 번호 선택 : ");
+		System.out.print("구매할 번호 선택 (0 선택시 구매 안 함) : ");
 
 		int drinkNumber;
 		int pick = sc.nextInt();
 		if (0 < pick && pick < 4) {
 			drinkNumber = pick - 1;
+		} else if (pick == 0) {
+			System.out.println("\n잔돈 반환 :" + money + "원");
+			return true;
 		} else {
 			System.out.println("없는 번호 입니다. 다시 고르세요.");
 			return run(vm, sc, money);
