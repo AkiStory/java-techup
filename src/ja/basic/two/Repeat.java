@@ -28,7 +28,7 @@ public class Repeat {
 			System.out.println("Hello World2");
 			k++;
 		} while (k < 3);
-
+		//
 		// foreach : 향상된 for문
 		// 배열이나 컬렉션을 다룰 때 주로 사용
 		List<Integer> list = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
